@@ -1,0 +1,17 @@
+((none)) > show tables;
+ERROR 1046 (3D000): No database selected
+((none)) > show tables
+    -> ^C
+((none)) > show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| prueba1            |
+| sys                |
++--------------------+
+5 rows in set (0.01 sec)
+
+((none)) > notee

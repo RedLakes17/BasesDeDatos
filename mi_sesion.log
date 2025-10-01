@@ -1,0 +1,10 @@
+mysql> tee C:/Users/Antonio Rojas/Documents/Programacion/BasesDeDatos/mi_sesion.log;
+mysql> SELECT NOW();
++---------------------+
+| NOW()               |
++---------------------+
+| 2025-09-07 20:28:31 |
++---------------------+
+1 row in set (0.00 sec)
+
+mysql> notee

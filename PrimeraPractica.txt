@@ -1,0 +1,8 @@
+mysql> /*-Dueñas Jauregui Jenaro
+         -Navarro Martínez Erick Israel
+         -Rojas Lagunas Kevin Antonio
+         -Serrano Álvarez Ricardo  */
+mysql>PROMPT [\D] [\d] >
+PROMPT set to '[\D] [\d] >'
+[Tue Sep 23 16:01:57 2025] [(none)] >no tee;
+
