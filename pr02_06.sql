@@ -171,3 +171,4 @@ INSERT IGNORE INTO aplicacion(folio, poliza, cajero, monto_aplicado) VALUES
 (198304, 'Hogar Confort', 'Call Center', 916);
 SELECT * FROM aplicacion;
 
+
