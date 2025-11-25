@@ -88,3 +88,17 @@ PROCEDURE): Cree un procedimiento llamado SP_AUMENTO_PRIMA_CONTRATO que re-
 ciba un id_contrato (INT) y un porcentaje_aumento (DECIMAL). El procedimiento
 debe aumentar el monto_prima de todas las pólizas asociadas a ese contrato
 por el porcentaje dado (e.g., si se recibe 0.05, aumenta 5 %).*/
+DROP PROCEDURE IF EXISTS SP_AUMENTO_PRIMA_CONTRATO;
+
+DELIMITER $$
+CREATE PROCEDURE SP_AUMENTO_PRIMA_CONTRATO(
+    IN p_id_contrato INT,
+    IN p_porcentaje_aumento DECIMAL(5,4)
+)
+BEGIN
+    UPDATE polizas
+    SET monto_prima = monto_prima * (1 + p_porcentaje_aumento)
+    WHERE id_contrato = p_id_contrato;
+END $$
+DELIMITER ;
+
